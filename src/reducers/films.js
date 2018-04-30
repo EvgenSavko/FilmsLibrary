@@ -24,13 +24,15 @@ export default function films(state = returnObj || initialState, action) {
     })
 
     let returnObj = JSON.parse(localStorage.getItem("myKey"))
-    returnObj.map( (item, index) => {
+	if(Array.isArray(returnObj)) {
+		    returnObj.map( (item, index) => {
           if (index == action.payload.id) {
             item.comments.push(action.payload.value)
           }
         })
     let serialObj = JSON.stringify(returnObj);
     localStorage.setItem("myKey", serialObj);
+	}
 
     return newFilms;
   } else if (action.type === 'ADD_FILM') {
