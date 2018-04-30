@@ -11,7 +11,10 @@ const initialState = [
   }
 ];
 
-export default function films(state = initialState, action) {
+let returnObj = JSON.parse(localStorage.getItem("myKey"))
+console.log('returnObj' ,returnObj)
+
+export default function films(state = returnObj || initialState, action) {
  if (action.type === 'ADD_COMMENT') {
    const newFilms = [...state];
     newFilms.map( (item, index) => {
@@ -19,13 +22,34 @@ export default function films(state = initialState, action) {
         item.comments.push(action.payload.value)
       }
     })
+
+    let returnObj = JSON.parse(localStorage.getItem("myKey"))
+    returnObj.map( (item, index) => {
+          if (index == action.payload.id) {
+            item.comments.push(action.payload.value)
+          }
+        })
+    let serialObj = JSON.stringify(returnObj);
+    localStorage.setItem("myKey", serialObj);
+
     return newFilms;
   } else if (action.type === 'ADD_FILM') {
       const newFilms = [...state, action.payload];
+
+      let serialObj = JSON.stringify(newFilms);
+      localStorage.setItem("myKey", serialObj);
+      //localStorage.clear()
+
       return newFilms;
   } else if (action.type === 'DEL_FILM') {
       const newFilms = [...state];
       newFilms.splice(action.index, 1);
+
+      let returnObj = JSON.parse(localStorage.getItem("myKey"))
+      returnObj.splice(action.index, 1);
+      let serialObj = JSON.stringify(returnObj);
+      localStorage.setItem("myKey", serialObj);
+
     return newFilms;
   }
   return state;

@@ -12,6 +12,7 @@ class Menu extends Component {
 
     this.state = {
 			isOpen: false,
+
 		}
 
   }
@@ -45,7 +46,15 @@ class Menu extends Component {
 
   AddFilmObj = e => {
       e.preventDefault();
-      if (this.state.title != undefined) {
+      if (
+        this.state.title != undefined &&
+        this.state.year != undefined &&
+        this.state.country != undefined &&
+        this.state.genre != undefined &&
+        this.state.poster != undefined &&
+        this.state.actors != undefined &&
+        this.state.description != undefined 
+      ) {
         this.props.onAddFilm(
           this.state.title,
           this.state.year,
