@@ -1,0 +1,139 @@
+.mind{
+  border-radius: 20px;
+  margin-left: 19%;
+  margin-right: 19%;
+}
+.card{
+  margin-top: 50px;
+  background-color: gray;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img{
+  margin-top: 5%;
+  margin-left: 6%;
+  width: 310px;
+  height: 440px;
+  z-index: 9999;
+}
+.img > img:first-child{
+  width: 310px;
+  height: 440px;
+}
+
+.describe {
+  filter: blur(0px) !important ;
+  margin-top: 5%;
+  margin-left: 6%;
+  width: 560px;
+  height: 440px;
+  z-index: 1;
+}
+.describe > h3 {
+  font-size: 28px;
+  color: white;
+}
+
+.describe > p:nth-child(2) {
+  color: white;
+  width: auto;
+}
+.describe > p:nth-child(3) {
+  color: white;
+ width: 300px;
+}
+.describe > p:nth-child(3) > span {
+ margin-left: 100px;
+ width: auto;
+}
+.describe > p:nth-child(4) {
+  color: white;
+ width: 300px;
+}
+.describe > p:nth-child(4) > span {
+ margin-left: 130px;
+}
+.describe > p:nth-child(5) {
+  color: white;
+ width: 300px;
+}
+.describe > p:nth-child(5) > span {
+ margin-left: 120px;
+}
+.describe > p:nth-child(6) {
+  color: white;
+ width: 175px;
+ height: 50px;
+ float: left;
+}
+.describe > p:nth-child(7)  {
+   color: white;
+}
+
+
+.del{
+  margin-top: 40px;
+  width: 140px;
+  height: 40px;
+  border-radius: 55px;
+  color: white;
+  background-color: #ff7e70;
+}
+.edit{
+  margin-top: 40px;
+  margin-left: 24px;
+  width: 140px;
+  height: 40px;
+  border-radius: 55px;
+  color: white;
+  background-color: #6ecdfd;
+}
+.del{
+  color: white;
+  background-color: #ff7e70;
+}
+.margbottom{
+  height: 84px;
+}
+.margbottom2{
+  height: 42px;
+}
+.comment{
+  margin-top: -40px;
+  padding-top: 40px;
+  height: auto;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 0px 0px 20px 20px;
+}
+.comment > p {
+  margin-left: 6%;
+  margin-top: 41px;
+  color: #ff7e70;
+}
+.comment > hr {
+  margin-left: 6%;
+}
+.comment1{
+  margin-left: 6%;
+}
+.comment1 > input {
+  margin-top: 36px;
+}
+.arrowUP{
+  padding-left: 25px;
+  background-image: url(../logo/arrowUP.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.arrowDown{
+  padding-left: 25px;
+  background-image: url(../logo/arrowDOWN.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}

@@ -1,0 +1,86 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #e0eaf2;
+}
+.left{
+  background-color: #51afe1;
+  float:left;
+  width: 19%;
+  height: 136px;
+}
+.left > p {
+  margin-left: 20%;
+  margin-top: 58px;
+  padding-bottom: 58px;
+  font-size: 20pt;
+  color: white;
+}
+.right{
+  background-color: #6fcdff;
+  width: auto;
+  height: 136px;
+}
+.right > div{
+  margin-top: 48px;
+  /* margin-bottom: 48px; */
+  margin-left: 98px;
+  margin-right: 18px;
+  float:left;
+  width: 40px;
+  height: 40px;
+  background-image: url(../logo/add.png);
+}
+.right > p{
+    padding-top: 58px;
+    margin-bottom: 58px;
+    color: white;
+}
+.forma{
+  border-radius: 0px 0px 20px 20px;
+  margin-left: 19%;
+  margin-right: 19%;
+  background-color: white;
+}
+.forma > div {
+  margin-left: 98px;
+  width: 520px;
+  padding-top: 45px;
+}
+.forma > div > p:nth-child(3) {
+  margin-top: 30px;
+}
+.forma > div > p:nth-child(5) {
+  margin-top: 30px;
+}
+.forma > div > p:nth-child(7) {
+  margin-top: 30px;
+}
+.forma > div > p:nth-child(9) {
+  margin-top: 30px;
+}
+.forma > div > p:nth-child(11) {
+  margin-top: 30px;
+}
+.forma > div > p:nth-child(13) {
+  margin-top: 30px;
+}
+.btnBlock{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.cancel{
+  width: 140px;
+  height: 40px;
+  border-radius: 55px;
+  color: white;
+  background-color: #ff7e70;
+}
+.addInform{
+  margin-left: 24px;
+  width: 140px;
+  height: 40px;
+  border-radius: 55px;
+  color: white;
+  background-color: #6ecdfd;
+}
